@@ -76,7 +76,7 @@ h2 {
 
   @font-face {
     font-family: "myMarker";
-    src: url(/assets/adrip1.ttf) format("truetype");
+    src: url(/assets/fonts/adrip1.ttf) format("truetype");
   }
 
   .overlay-title {
