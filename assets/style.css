@@ -1,4 +1,26 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+}
+
+
 img {
+    
     width: 100%;
     display: block;
     
@@ -7,9 +29,9 @@ img {
 
 
 * {
-        font-size: 28px;
-        line-height: 1.625;
-        font-family: Nunito, sans-serif;
+    font-size: 48px;
+    line-height: 1.625;
+    font-family: Nunito, sans-serif;
 }
 
 h1 {
@@ -26,7 +48,10 @@ h2 {
 
 .image-container {
     position: relative;
-    display: inline-block;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  
     
   }
   
@@ -34,15 +59,16 @@ h2 {
     display: block;
     width: 100%;
     height: auto;
+    
   }
   
   .text-box{
     text-align: center;
-    font-size: 28px;
+    font-size: 48px;
     padding-left: 450px;
     padding-right: 450px;
-    padding-top: 100px;
-    padding-bottom: 100px;
+    padding-top: 200px;
+    padding-bottom: 200px;
     
     
   }
@@ -50,11 +76,12 @@ h2 {
 
   @font-face {
     font-family: "myMarker";
-    src: url(/assets/adrip1.ttf);
+    src: url(/assets/adrip1.ttf) format("truetype");
   }
+
   .overlay-title {
     position: absolute;
-    top: 35%; 
+    top: 30%; 
     left: 50%; 
     transform: translate(-50%, -50%); 
     color: white; 
@@ -64,36 +91,136 @@ h2 {
     font-family: "myMarker";
   }
 
-.biografia h2 {
+.biografia {
+    display: flex;
+    
+  
+}
+
+.biografia-left {
+  flex: 1 1 0;
+  background-color: azure;
+}
+
+.biografia-left h2 {
+  position: relative;
     text-align: center;
     font-size: 48px;
-    padding-bottom: 250px;
-    padding-top: 250px;
-    background-color: azure;
- 
-    
+    top: 50%;
+
   }
 
+.biografia-right{
+  text-align: center;
+  background-color: lightgray;
+  color: lightgray; 
+  flex: 1 1 0;
+}
+
+.biografia-right strong {
+    font-size: 24px;
+  
+}
+  
 .biografia-right p{
-    text-align: center;
-    font-size: 16px;
-    margin-top: 40px;
-    padding-top: 40px;
-    padding-bottom: 44px;
-    padding-left: 80px;
-    padding-right: 80px;
-    background-color: lightgray;
+    text-align: justify;
+    font-size: 24px;
     color: white;
-    
-  }
-
-  .biografia-right strong {
-    font-size: 16px;
-  }
+    padding: 100px 100px;
+    text-justify: auto;
   
+}
 
+.mySlides {
+  display: none;
+}
+
+.list {
+    background-color: rgb(176, 203, 224);
+    padding-top: 150px;
+    padding-bottom: 50px;
+}
+
+
+
+.list div {
+  margin-bottom: 150px;
+  font-size: 200px;
+  color: azure;
+  text-align: center;
+}
+
+.list-songs {
+    display: flex;
+    justify-content: center
+}
+
+.list-songs iframe {
+    padding-right: 200px;
+    padding-left: 200px;
+}
+
+.list-favsongs {
+  display: flex;
+  justify-content: center
+}
+
+.list-favsongs iframe {
+  padding-right: 200px;
+  padding-left: 200px;
+}
+
+
+.prev, .next {
+  cursor: pointer;
+  position: relative;
+  top: 0;
+  width: auto;
+  margin-bottom: 0px;
+  color: rgb(116, 116, 116);
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+.prev {
+  padding-left: 25px;
   
+}
 
-  .list h2 {
-    
-  }
+
+.next {
+  right: 0;
+  padding-right: 25px;
+}
+
+.prev:hover, .next:hover {
+  color: azure;
+}
+
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
