@@ -1,3 +1,4 @@
+/* Resetear estilo */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -26,8 +27,6 @@ img {
     
 }
 
-
-
 * {
     font-size: 48px;
     line-height: 1.625;
@@ -51,16 +50,13 @@ h2 {
     display: block;
     margin-left: auto;
     margin-right: auto;
-  
-    
-  }
+}
   
   .image-container img {
     display: block;
     width: 100%;
     height: auto;
-    
-  }
+}
   
   .text-box{
     text-align: center;
@@ -69,17 +65,15 @@ h2 {
     padding-right: 450px;
     padding-top: 200px;
     padding-bottom: 200px;
-    
-    
-  }
-  
+}
 
-  @font-face {
+/* Agregar fuentes que tengas descargadas. */
+@font-face {
     font-family: "myMarker";
     src: url(../assets/fonts/adrip1.ttf) format("truetype");
-  }
+}
 
-  .overlay-title {
+.overlay-title {
     position: absolute;
     top: 30%; 
     left: 50%; 
@@ -89,12 +83,10 @@ h2 {
     font-size: 200px; 
     text-align: center;
     font-family: "myMarker";
-  }
+}
 
 .biografia {
     display: flex;
-    
-  
 }
 
 .biografia-left {
@@ -107,8 +99,7 @@ h2 {
     text-align: center;
     font-size: 48px;
     top: 50%;
-
-  }
+}
 
 .biografia-right{
   text-align: center;
@@ -119,8 +110,7 @@ h2 {
 
 .biografia-right strong {
     font-size: 24px;
-  
-}
+  }
   
 .biografia-right p{
     text-align: justify;
@@ -128,8 +118,7 @@ h2 {
     color: white;
     padding: 100px 100px;
     text-justify: auto;
-  
-}
+  }
 
 .mySlides {
   display: none;
@@ -140,8 +129,6 @@ h2 {
     padding-top: 150px;
     padding-bottom: 50px;
 }
-
-
 
 .list div {
   margin-bottom: 150px;
@@ -189,7 +176,6 @@ h2 {
   padding-left: 25px;
   
 }
-
 
 .next {
   right: 0;

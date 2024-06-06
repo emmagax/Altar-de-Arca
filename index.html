@@ -1,43 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
 
-
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Shrine of Arca</title>
     <link rel="stylesheet" href="assets/style.css">
-    
-    
 </head>
 
-
 <body>
-<div class="image-container">
-    <div class="overlay-title">ARCA</div>
-    <img src="https://media.vogue.mx/photos/61980e15d1132c0a90b3a4a0/16:9/w_2287,h_1286,c_limit/quien-es-arca-cantante-venezolana.jpg" alt="Arca">
-    <div class="text-box"><p><strong>Alejandra Ghersi Rodríguez</strong>, conocida profesionalmente como Arca, es una música y productora musical Venezolana basada en Barcelona, España. Conocida anteriormente como Nuuro. </p>
+    <!-- Imagen con texto encima -->
+    <div class="image-container">
+        <div class="overlay-title">ARCA</div>
+            <img src="https://media.vogue.mx/photos/61980e15d1132c0a90b3a4a0/16:9/w_2287,h_1286,c_limit/quien-es-arca-cantante-venezolana.jpg" alt="Arca">
+        <div class="text-box"><p><strong>Alejandra Ghersi Rodríguez</strong>, conocida profesionalmente como Arca, es una música y productora musical Venezolana basada en Barcelona, España. Conocida anteriormente como Nuuro. </p>
+        </div>
+    </div>
+    <!-- Dividir en 2 columnas. Una columno por texto deseado (Checar style.css) -->
+    <div class="biografia">
+        <div class="biografia-left">
+            <h2>Biografía</h2>
+        </div>
+        <div class="biografia-right">
+            <p>Nació en la ciudad de <strong>Caracas (Venezuela)</strong>, específicamente en La Vega,en el seno de una familia caraqueña dedicada a los negocios en la ciudad capital. Su padre Henrique Ghersi Rossón, trabajaba en banca de inversión, mientras que su madre cursó la carrera de estudios internacionales. Después de vivir un tiempo durante su infancia, desde los 3 años en la ciudad de Darien (Estados Unidos), su familia regresó a la capital venezolana, cuando Arca tenía 9 años.
+            Desde los 7 años tomó clases de piano clásico y de cuatro venezolano, también se desempeñó en grupos de gaita en su niñez y adolescencia en Caracas, época donde también aprendió a tocar el furruco. A los 14 años de edad empezó a producir y remezclar música por cuenta independiente, mediante samples de otros artistas, para ello utilizaba principalmente el software/programa de edición Fruity Loops; el cual es conocido actualmente como FL Studio.
+            Comenzó estudios de bachillerato (estudios secundarios), en el Colegio San Ignacio de Loyola y culminó sus estudios en el Colegio Jefferson en 2007 en Caracas. Durante esta época produjo música bajo el nombre de Nuuro, y recibió una popularidad moderada en el país, con apoyo de artistas nacionales de gran nivel como Los Amigos Invisibles. También colaboro con otros artistas venezolanos, incluyendo hacerse cargo de la programación de sintetizadores en el álbum debut de La Vida Bohème, Nuestra, el cual seria nominado a ambos Premios Grammy y Premios Grammy Latinos.
+            Más tarde de vuelta en los Estados Unidos, estudiaría en la Tisch School of the Arts y se matricularía en el Clive Davis Institute of Recorded Music, las cuales forman parte de la Universidad de Nueva York, para más tarde afincarse un tiempo en Londres (Inglaterra). En el 2019 se mudó a la ciudad de Barcelona, (España), donde actualmente reside. </p>
+        </div>
     </div>
     
-</div>
-    
-<div class="biografia">
-    <div class="biografia-left">
-        <h2>Biografía</h2>
-    </div>
-        
-    <div class="biografia-right">
-        <p>Nació en la ciudad de <strong>Caracas (Venezuela)</strong>, específicamente en La Vega,en el seno de una familia caraqueña dedicada a los negocios en la ciudad capital. Su padre Henrique Ghersi Rossón, trabajaba en banca de inversión, mientras que su madre cursó la carrera de estudios internacionales. Después de vivir un tiempo durante su infancia, desde los 3 años en la ciudad de Darien (Estados Unidos), su familia regresó a la capital venezolana, cuando Arca tenía 9 años.
-        Desde los 7 años tomó clases de piano clásico y de cuatro venezolano, también se desempeñó en grupos de gaita en su niñez y adolescencia en Caracas, época donde también aprendió a tocar el furruco. A los 14 años de edad empezó a producir y remezclar música por cuenta independiente, mediante samples de otros artistas, para ello utilizaba principalmente el software/programa de edición Fruity Loops; el cual es conocido actualmente como FL Studio.
-        Comenzó estudios de bachillerato (estudios secundarios), en el Colegio San Ignacio de Loyola y culminó sus estudios en el Colegio Jefferson en 2007 en Caracas. Durante esta época produjo música bajo el nombre de Nuuro, y recibió una popularidad moderada en el país, con apoyo de artistas nacionales de gran nivel como Los Amigos Invisibles. También colaboro con otros artistas venezolanos, incluyendo hacerse cargo de la programación de sintetizadores en el álbum debut de La Vida Bohème, Nuestra, el cual seria nominado a ambos Premios Grammy y Premios Grammy Latinos.
-        Más tarde de vuelta en los Estados Unidos, estudiaría en la Tisch School of the Arts y se matricularía en el Clive Davis Institute of Recorded Music, las cuales forman parte de la Universidad de Nueva York, para más tarde afincarse un tiempo en Londres (Inglaterra). En el 2019 se mudó a la ciudad de Barcelona, (España), donde actualmente reside. </p>
-    </div>
-        
-    
-</div>
-    
-<div class="list">
+    <!-- Empotrar canciones. (El codigo "iframe" lo obtienes de Spotify haciendo click en los tres puntos de la canción que quieras y luego haces click en compartir y en empotrar track. Te va a dar el codigo ya listo para pegar en tu html.) -->
+    <div class="list">
         <div class="mySlides fade">
             <div class="title-slide">Popular</div> 
             <div class="list-songs">
@@ -54,17 +47,19 @@
                 <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/2ZFu40Ik8VsUE9H87W0MmZ?utm_source=generator" width="400" height="400" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
             </div> 
         </div>
-    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-    <a class="next" onclick="plusSlides(1)">&#10095;</a>
-</div>
+        <!-- Flechas slideshow -->
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
 
 <br>
 
-<div style="text-align:center">
-    <span class="dot" onclick="currentSlide(1)"></span>
-    <span class="dot" onclick="currentSlide(2)"></span>
-  </div>
+<!-- Puntos de pagina -->
+    <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+    </div>
 
-<script src="assets/script.js"></script> 
+    <script src="assets/script.js"></script> 
 </body>
 </html>
