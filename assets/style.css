@@ -1,0 +1,99 @@
+img {
+    width: 100%;
+    display: block;
+    
+}
+
+
+
+* {
+        font-size: 28px;
+        line-height: 1.625;
+        font-family: Nunito, sans-serif;
+}
+
+h1 {
+    font-size: 48px;
+    margin: 0%;
+    padding: 0%;
+    border: 0%;
+}
+
+h2 {
+    font-size: 28px;
+    text-align: center;
+}
+
+.image-container {
+    position: relative;
+    display: inline-block;
+    
+  }
+  
+  .image-container img {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+  
+  .text-box{
+    text-align: center;
+    font-size: 28px;
+    padding-left: 450px;
+    padding-right: 450px;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    
+    
+  }
+  
+
+  @font-face {
+    font-family: "myMarker";
+    src: url(/assets/adrip1.ttf);
+  }
+  .overlay-title {
+    position: absolute;
+    top: 35%; 
+    left: 50%; 
+    transform: translate(-50%, -50%); 
+    color: white; 
+    padding: 10px 20px; 
+    font-size: 200px; 
+    text-align: center;
+    font-family: "myMarker";
+  }
+
+.biografia h2 {
+    text-align: center;
+    font-size: 48px;
+    padding-bottom: 250px;
+    padding-top: 250px;
+    background-color: azure;
+ 
+    
+  }
+
+.biografia-right p{
+    text-align: center;
+    font-size: 16px;
+    margin-top: 40px;
+    padding-top: 40px;
+    padding-bottom: 44px;
+    padding-left: 80px;
+    padding-right: 80px;
+    background-color: lightgray;
+    color: white;
+    
+  }
+
+  .biografia-right strong {
+    font-size: 16px;
+  }
+  
+
+  
+
+  .list h2 {
+    
+  }
